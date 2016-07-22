@@ -327,7 +327,7 @@ int
 main(int argc, char **argv)
 {
   app_startup();
-  putenv("TZ=MET-1METDST");
+  setenv("TZ", "MET-1METDST", TRUE);
   tzset();
 
   start_grabbing_messages();
