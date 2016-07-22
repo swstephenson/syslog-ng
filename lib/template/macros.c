@@ -587,7 +587,7 @@ log_macro_expand_simple(GString *result, gint id, const LogMessage *msg)
 }
 
 guint
-log_macro_lookup(gchar *macro, gint len)
+log_macro_lookup(const gchar *macro, gint len)
 {
   gchar buf[256];
   gint macro_id;
