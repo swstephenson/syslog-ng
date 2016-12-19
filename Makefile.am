@@ -45,12 +45,12 @@ AM_CPPFLAGS		= -I$(top_srcdir)/lib -I$(top_srcdir)/modules -I$(top_builddir)/lib
 # should be here
 
 AM_CFLAGS = -Wall \
-	-Wshadow
+	-Wshadow \
+	-fno-common
 
 if ENABLE_EXTRA_WARNINGS
 
 AM_CFLAGS += \
-	-fno-common \
 	-W \
 	-Wabi \
 	-Wcast-align \
