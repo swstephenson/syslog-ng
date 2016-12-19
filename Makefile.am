@@ -51,17 +51,19 @@ AM_CFLAGS = -Wall \
 if ENABLE_EXTRA_WARNINGS
 
 AM_CFLAGS += \
-	-W \
-	-Wabi \
+        -Wno-empty-body \
+        -Wignored-qualifiers \
+        -Wmissing-parameter-type \
+        -Wold-style-declaration \
+        -Woverride-init \
+        -Wuninitialized \
+        -Wunused-but-set-parameter \
 	-Wcast-align \
 	-Wdeprecated \
 	-Wdeprecated-declarations \
-	-Wextra \
 	-Wimplicit-function-declaration \
-	-Winvalid-pch \
 	-Wmissing-format-attribute \
 	-Woverflow \
-	-Wstrict-overflow=2 \
 	\
 	-Wno-error=aggregate-return -Waggregate-return \
 	-Wno-error=bad-function-cast -Wbad-function-cast \
