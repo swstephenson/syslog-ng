@@ -52,10 +52,10 @@ if ENABLE_EXTRA_WARNINGS
 
 AM_CFLAGS += \
         -Wno-empty-body \
+        -Wno-override-init \
         -Wignored-qualifiers \
         -Wmissing-parameter-type \
         -Wold-style-declaration \
-        -Woverride-init \
         -Wuninitialized \
         -Wunused-but-set-parameter \
 	-Wcast-align \
