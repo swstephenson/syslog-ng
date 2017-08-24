@@ -106,6 +106,10 @@ _display_source_line(LogExprNode *expr_node)
         buf[0] = 0;
       fclose(f);
     }
+  else
+    {
+      buf[0] = 0;
+    }
   printf("%-8d %s", expr_node->line, buf);
   if (buf[strlen(buf) - 1] != '\n')
     putc('\n', stdout);
